@@ -8,11 +8,6 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.12
-      
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
 
     working_directory: ~/repo
 
@@ -35,15 +30,16 @@ jobs:
         
       # run tests!
       - run: npx lerna bootstrap
-      - run: cd apps/api
+      - run: cd apps/api 
       - run: npm run test
+
   deploy:
     machine:
       enabled: true
-    working-directory: ~/repo
+    working_directory: ~/repo
     steps:
-     - checkout
-     - run: echo 'Deploy script goes here'
+      - checkout
+      - run: echo 'Deploy script goes here'
 
 workflows:
   version: 2
@@ -56,5 +52,3 @@ workflows:
           filters:
             branches:
               only: master
-
-
