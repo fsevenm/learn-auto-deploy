@@ -1,5 +1,14 @@
+const END_POINT_BASEURL = getEndPointBaseUrl();
+
+function getEndPointBaseUrl() {
+    const hostname = window.location.hostname;
+    const isDev = hostname === 'locahost';
+
+    return isDev ? 'http://localhost:8080' : 'https://meatup-ayub-api.now.sh'
+}
+
 function getEvents() {
-    return fetch('http://localhost:8080/api/events')
+    return fetch(END_POINT_BASEURL + '/api/events')
         .then(response => response.json())
 }
 
