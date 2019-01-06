@@ -2,7 +2,7 @@ const END_POINT_BASEURL = getEndPointBaseUrl();
 
 function getEndPointBaseUrl() {
     const hostname = window.location.hostname;
-    const isDev = hostname === 'locahost';
+    const isDev = hostname === 'localhost';
 
     return isDev ? 'http://localhost:8080' : 'https://meatup-ayub-api.now.sh'
 }
