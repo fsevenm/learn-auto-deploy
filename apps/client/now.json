@@ -1,9 +1,4 @@
 {
-    "version": 2,
     "name": "meatup-ayub",
-    "alias": "meatup-ayub",
-    "builds": [{
-        "src": "index.js",
-        "use": "@now/node"
-    }]
+    "alias": "meatup-ayub"
 }
