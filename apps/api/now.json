@@ -4,6 +4,6 @@
     "alias": "meatup-ayub-api",
     "builds": [{
         "src": "index.js",
-        "use": "@now/node-server"
+        "use": "@now/node"
     }]
 }
