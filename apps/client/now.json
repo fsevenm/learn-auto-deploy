@@ -4,6 +4,6 @@
     "alias": "meatup-ayub",
     "builds": [
         { "src": "./index.js", "use": "@now/node-server"}, 
-        { "src": "./public/static/js/*.js", "use": "@now/static"}
+        { "src": "./public/static/**", "use": "@now/static"}
     ]
 }
