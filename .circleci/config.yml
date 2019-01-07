@@ -39,7 +39,7 @@ jobs:
     steps:
       - checkout
       - run: npm install --global yarn && yarn -v
-      - run: yarn add now@13
+      - run: yarn add now@13 --ignore-engines
       - run: chmod ugo+x ./scripts/deploy.sh
       - run: ./scripts/deploy.sh
 
