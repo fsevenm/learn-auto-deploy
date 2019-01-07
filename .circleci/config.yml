@@ -53,6 +53,7 @@ jobs:
             echo "[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"" >> $BASH_ENV
       - run: npm install --global yarn && yarn -v
       - run: npm -v && node -v
+      - run: export PATH="$(yarn global bin):$PATH"
       - run: yarn global add now
       - run: now -v
       - run: chmod ugo+x ./scripts/deploy.sh
