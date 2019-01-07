@@ -52,10 +52,11 @@ jobs:
             echo 'export NVM_DIR="/opt/circleci/.nvm"' >> $BASH_ENV
             echo "[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"" >> $BASH_ENV
       - run: npm install --global yarn && yarn -v
+      - run: npm install npm@latest -g
       - run: npm -v && node -v
       - run: export PATH="$(yarn global bin):$PATH" && source ~/.bashrc
       - run: source ~/.bash_profile && source ~/.profile
-      - run: yarn global add now
+      - run: npm install --global now
       - run: now -v
       - run: chmod ugo+x ./scripts/deploy.sh
       - run: ./scripts/deploy.sh
