@@ -2,8 +2,8 @@
     "version": 2,
     "name": "meatup-ayub",
     "alias": "meatup-ayub",
-    "builds": [{
-        "src": "./index.js",
-        "use": "@now/node-server"
-    }]
+    "builds": [
+        { "src": "./index.js", "use": "@now/node-server"}, 
+        { "src": "./public/static/**", "use": "@now/static"}
+    ]
 }
