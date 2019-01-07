@@ -38,9 +38,9 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: npm install yarn
+      - run: npm install --global yarn && yarn -v
       - run: yarn add now@13
-      - run: chmod -R 777 ./scripts/deploy.sh
+      - run: chmod ugo+x ./scripts/deploy.sh
       - run: ./scripts/deploy.sh
 
 workflows:
