@@ -39,7 +39,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: npm install --global now@13
+      - run: npm install --global now@12
       - run: chmod -R 777 ./scripts/deploy.sh
       - run: ./scripts/deploy.sh
 
