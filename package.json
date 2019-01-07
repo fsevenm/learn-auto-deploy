@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lerna": "^3.8.5"
+    "lerna": "^3.8.5",
+    "now": "13"
   },
   "description": ""
 }
