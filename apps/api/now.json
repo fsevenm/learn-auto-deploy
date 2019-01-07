@@ -3,8 +3,12 @@
     "name": "meatup-ayub-api",
     "alias": "meatup-ayub-api",
     "builds": [{
-        "src": "./*.js",
+        "src": "./index.js",
         "use": "@now/node-server"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "/index.js"
     }]
 
 }
