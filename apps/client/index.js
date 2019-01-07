@@ -9,7 +9,7 @@ app.get('/', (request, response) => {
     response.sendFile(filePath);
 });
 
-const PORT = 3000;
+const PORT = 5000;
 
 app.listen(PORT, () => {
     console.log(`Client running on port ${PORT}`);
