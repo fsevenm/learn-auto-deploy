@@ -5,8 +5,5 @@
     "builds": [
         { "src": "./index.js", "use": "@now/node-server"}, 
         { "src": "./public/static/**", "use": "@now/static"}
-    ],
-    "routes": [
-        { "src": "/static/", "dest": "/public/static/" }
     ]
 }
