@@ -31,7 +31,7 @@ jobs:
       # run tests!
       - run: npx lerna bootstrap
       - run: cd apps/api 
-      - run: yarn test
+      - run: yarn run test
 
   deploy:
     machine:
