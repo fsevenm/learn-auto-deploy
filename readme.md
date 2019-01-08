@@ -1,6 +1,6 @@
 # Learn deploy (continuous integration)
 
-[![CircleCI](https://circleci.com/gh/fsevenm/learn-auto-deploy/tree/use-yarn.svg?style=svg)](https://circleci.com/gh/fsevenm/learn-auto-deploy/tree/use-yarn)
+[![CircleCI](https://circleci.com/gh/fsevenm/learn-auto-deploy/tree/master.svg?style=svg)](https://circleci.com/gh/fsevenm/learn-auto-deploy/tree/master)
 
 ## Requirements
 - Yarn 1.9
