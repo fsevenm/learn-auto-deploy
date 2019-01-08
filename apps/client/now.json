@@ -8,7 +8,7 @@
     ],
     "routes": [
         {
-            "src": "/static/$1",
+            "src": "/static/*",
             "dest": "/public/static/$1"
         }
     ]
