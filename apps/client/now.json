@@ -6,8 +6,10 @@
         { "src": "./index.js", "use": "@now/node-server"}, 
         { "src": "./public/static/**", "use": "@now/static"}
     ],
-    "routes": [{
-        "src": "/static/js/home.js",
-        "dest": "/public/static/js/home.js"
-    }]
+    "routes": [
+        {
+            "src": "/static/*/(.*)",
+            "dest": "/public/static/*/$1"
+        }
+    ]
 }
