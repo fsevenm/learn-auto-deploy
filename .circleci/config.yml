@@ -58,9 +58,6 @@ jobs:
           name: Installing Now
           command: npm install --global now
       - run: 
-          name: Granting permission
-          command: chmod ugo+x ./scripts/deploy.sh
-      - run: 
           name: Deploying to Now
           command: ./scripts/deploy.sh
 
